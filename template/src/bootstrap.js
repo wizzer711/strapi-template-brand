@@ -102,6 +102,10 @@ async function createEntry(model, entry) {
 }
 
 async function importPages(pages) {
+
+    return pages.map(async (page) => {
+        await createEntry("page", page);
+    });
 //   const getPageCover = (slug) => {
 //     switch (slug) {
 //       case "":
@@ -171,7 +175,7 @@ async function importPages(pages) {
     //   }
     //});
 
-    await createEntry("page", page);
+    
   //});
 }
 
