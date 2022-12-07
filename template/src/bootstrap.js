@@ -1,6 +1,6 @@
-const fs = require("fs");
-const { pages, globals, leadFormSubmissions } = require("../data/data");
-const set = require("lodash.set");
+//const fs = require("fs");
+const { pages } = require("../data/data");
+//const set = require("lodash.set");
 
 async function isFirstRun() {
   const pluginStore = strapi.store({
